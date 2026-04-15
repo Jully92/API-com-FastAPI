@@ -14,17 +14,16 @@ jobs:
       - name: Simulando Continuous Delivery
         uses: actions/upload-artifact@v7
         with:
-          name: projetozipado #nome do arquivo
+          name: projetozipado.zip #nome do arquivo
           path:
             .
-            README.md
 
   deploy:
     runs-on: ubuntu-latest
     needs: deliver
     steps:
-      - uses : actions/upload-artifact@v7
-        with:
-         name: projetozipado
-      - name: Display structure of downloaded files
-        run: ls -R
+        - uses: actions/download-artifact@v8
+          with:
+            name: projetozipado.zip
+        - name: Display structure of downloaded files
+          run: ls -R
