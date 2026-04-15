@@ -1,0 +1,17 @@
+name: Continuous Integration #nome do workflow
+on:
+  pull_request:
+    branches:
+      -main
+
+jobs:
+  build: #nome do job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code #Check Out do nosso repositorio
+        uses: actions/checkout@v5
+
+      - name: Python Lint Code Scanning Action #Roda o linter
+        uses: advanced-security/python-lint-code-scanning-action@v1.1.3
+        with:
+          linter: pylint
