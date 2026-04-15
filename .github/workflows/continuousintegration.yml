@@ -1,8 +1,5 @@
 name: Continuous Integration #nome do workflow
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
