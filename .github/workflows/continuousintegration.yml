@@ -2,7 +2,7 @@ name: Continuous Integration #nome do workflow
 on:
   pull_request:
     branches:
-      -main
+      - main
 
 jobs:
   build: #nome do job
