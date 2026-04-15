@@ -17,7 +17,6 @@ jobs:
           name: projetozipado #nome do arquivo
           path:
             .
-            README.md
 
   deploy:
     runs-on: ubuntu-latest
