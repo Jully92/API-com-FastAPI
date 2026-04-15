@@ -15,7 +15,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: Projeto Zipado #nome do arquivo
-          path: |
+          path:
             '**.py'
             README.md
 
