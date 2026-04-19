@@ -36,4 +36,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: false
-          tags: juliana92/app:latest
+          tags: user/app:latest
