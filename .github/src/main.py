@@ -13,7 +13,7 @@ class Estudante (BaseModel):
 #127.0.0.1:8000/
 @app.get ("/helloworld")
 async def root():
-    return {"message": "Hellow World"}
+    return {"message": "Hello World"}
 
 #127.0.0.1:8000/teste1
 @app.get("/funcaoteste")
