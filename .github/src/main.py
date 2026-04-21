@@ -27,10 +27,10 @@ async def create_estudante(estudante: Estudante):
 
 #Atualiza algo no sistema (cadastro)
 @app.put ("/estudantes/update/{id_estudante}")
-async def update_item(id_estudante: int):
+async def update_estudante(id_estudante: int):
     return id_estudante > 0
 
 #Remove algo do sistema (cadastro)
 @app.delete("/estudantes/delete/{id_estudante}")
-async def delete_item(id_estudante: int):
+async def delete_estudante(id_estudante: int):
     return id_estudante > 0
